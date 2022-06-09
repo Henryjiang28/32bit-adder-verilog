@@ -1,0 +1,5 @@
+read_verilog alu.v add8.v saturation.v control.v
+synth -flatten
+abc
+clean
+tee -o stat.txt stat
